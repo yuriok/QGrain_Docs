@@ -1,3 +1,8 @@
+---
+title: How to install QGrain
+date: 2021-04-27 13:37:45
+---
+
 # How to install QGrain
 
 **QGrain** is written by [Python](https://www.python.org/). So, it's **cross-platform**.
