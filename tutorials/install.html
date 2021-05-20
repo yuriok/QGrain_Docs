@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Helvetica:300,300italic,400,400italic,700,700italic|Comic Sans MS:300,300italic,400,400italic,700,700italic|Trebuchet MS:300,300italic,400,400italic,700,700italic|Courier New:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"qgrain.net","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="How to install QGrainQGrain is written by Python. So, it’s cross-platform. This means it can be installed on many kinds of systems, like Windows, Linux, Mac OS X, etc. Moreover, due to Python’s featur">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How to install QGrain">
+<meta property="og:url" content="http://qgrain.net/tutorials/install.html">
+<meta property="og:site_name" content="QGrain">
+<meta property="og:description" content="How to install QGrainQGrain is written by Python. So, it’s cross-platform. This means it can be installed on many kinds of systems, like Windows, Linux, Mac OS X, etc. Moreover, due to Python’s featur">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-04-27T13:37:45.000Z">
+<meta property="article:modified_time" content="2021-05-20T18:22:50.629Z">
+<meta property="article:author" content="Yuming Liu">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://qgrain.net/tutorials/install">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>How to install QGrain | QGrain
+</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QGrain</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">An open-source and easy-to-use software for the comprehensive analysis of grain-size distributions</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-functions">
+
+    <a href="/functions/" rel="section"><i class="fa fa-cubes fa-fw"></i>Functions</a>
+
+  </li>
+        <li class="menu-item menu-item-tutorials">
+
+    <a href="/categories/tutorials/" rel="section"><i class="fa fa-map fa-fw"></i>Tutorials</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+  
+
+          <div class="content page posts-expand">
+            
+
+    
+    
+    
+    <div class="post-block" lang="en">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">How to install QGrain<a href="https://github.com/yuriok/QGrain_Docs/edit/master/source/tutorials/install.md" class="post-edit-link" title="Edit this post" rel="noopener" target="_blank"><i class="fa fa-pencil-alt"></i></a>
+</h1>
+
+<div class="post-meta">
+  
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <h1 id="How-to-install-QGrain"><a href="#How-to-install-QGrain" class="headerlink" title="How to install QGrain"></a>How to install QGrain</h1><p><strong>QGrain</strong> is written by <a target="_blank" rel="noopener" href="https://www.python.org/">Python</a>. So, it’s <strong>cross-platform</strong>.</p>
+<p>This means it can be installed on many kinds of systems, like <strong>Windows</strong>, <strong>Linux</strong>, <strong>Mac OS X</strong>, etc.</p>
+<p>Moreover, due to Python’s features, there are two ways to install QGrain.</p>
+<h2 id="1-Use-executable-file"><a href="#1-Use-executable-file" class="headerlink" title="1. Use executable file"></a>1. Use executable file</h2><p>We have packed the executable setup file for <strong>Windows</strong> users. Because Windows does not have Python internally installed, and Windows users are not used to the command-line interface.</p>
+<p>You can download the latest version of QGrain from <a target="_blank" rel="noopener" href="https://github.com/QGrain-Organization/QGrain/releases">here</a>.</p>
+<p>When the setup file was downloaded, what you need to do is double-clicking the setup file to execute the installation program.</p>
+<p>All things are similar to other softwares on <strong>Windows</strong>. And then, you can see the shortcut on the desktop.</p>
+<h2 id="2-Use-Python"><a href="#2-Use-Python" class="headerlink" title="2. Use Python"></a>2. Use Python</h2><p>This method is for the user who has experience in Python and Shell (i.e. command-line interface). It uses the Python interpreter to execute the source codes of QGrain.</p>
+<p>The advantage of this method is its expansibility. Through the <code>pip</code> (the package installer for Python), you can easily download and update QGrain. If you are not satisfied with some functionalities of QGrain, or there are some small bugs, you can modify the codes by yourself to solve these problems instead of waiting for a new update to fix them.</p>
+<ol>
+<li><p>Install Python</p>
+<p> For Linux and Mac OS X users, you may have the built-in Python3 interpreter. You can run the command <code>python</code> or <code>python3</code> in your terminal to check if Python is existing.</p>
+<p> Note: Using <code>python</code> or <code>python3</code> depends on the alias or the filename of your Python3 interpreter, rather than you can choose Python2 or Python3 at liberty. Python2 is too old and has been obsoleted.interpreter</p>
+<p> If you have Python3 installed on your computer, you can see the text like below (test on Ubuntu 18.04 LTS). You can see the version of your Python. And the <code>&gt;&gt;&gt;</code> symbols hint you that you have entered the interactive model of Python’s interpreter. Type <code>quit()</code> to quit this model and back to the terminal.</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">your_user_name:~$ python3</span><br><span class="line">Python 3.6.9 (default, Nov  7 2019, 10:44:02)</span><br><span class="line">[GCC 8.3.0] on linux</span><br><span class="line">Type <span class="string">&quot;help&quot;</span>, <span class="string">&quot;copyright&quot;</span>, <span class="string">&quot;credits&quot;</span> or <span class="string">&quot;license&quot;</span> <span class="keyword">for</span> more information.</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+
+<p> If you have not Python3 yet, you can visit the <a target="_blank" rel="noopener" href="https://www.python.org/downloads/">official website of Python</a> to download and install it.</p>
+<p> Note: If you are a <strong>Windows</strong> user, remember to check the <strong>Add Python to Windows PATH</strong> option while installing Python. If not, some commands in this tutorial may be <strong>invalid</strong>, due to the <code>PATH</code> mechanism of Windows.</p>
+</li>
+<li><p>Get source codes and install QGrain</p>
+<p> We have upload QGrain to <a target="_blank" rel="noopener" href="https://pypi.org/">PyPI</a>. So, you can get the codes very expediently through <code>pip</code>. By running the following command, you can get QGrain module installed.</p>
+<p> <code>pip install QGrain</code></p>
+<p> For Chinese users, this command below may be faster.</p>
+<p> <code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple QGrain</code></p>
+<p> Note: On some systems, the name of <code>pip</code> of Python3 may be <code>pip3</code>.</p>
+<p> Run <code>pip install -U QGrain</code> to check and update QGrain.</p>
+<p> In addition, you can download the codes from Github. The link of our repository is over <a target="_blank" rel="noopener" href="https://github.com/QGrain-Organization/QGrain">here</a>.</p>
+<ul>
+<li><p>You can clone the repository by running the following command if you have <code>git</code> installed.</p>
+<p>  <code>git clone https://github.com/QGrain-Organization/QGrain.git</code></p>
+</li>
+<li><p>Or, you can download the pure codes directly by clicking <a target="_blank" rel="noopener" href="https://github.com/QGrain-Organization/QGrain/archive/master.zip">here</a>.</p>
+<p>  If you choose to download the zip file, please extract it.</p>
+</li>
+</ul>
+<p> Then, you should change the directory to QGrain’s folder, and run the following command.</p>
+<p> <code>python setup.py install</code> or <code>pip install .</code></p>
+</li>
+<li><p>Run QGrain</p>
+<p> Now, everything is ok.</p>
+<p> Then you can run <code>qgrain</code> command in your terminal.</p>
+<p> If it goes well, you can see the app interface below.</p>
+<p> If the command <code>qgrain</code> was not found. It may be caused by the lack of Python’s directory in the Windows <code>PATH</code> environment variable.</p>
+<p> Because QGrain will generate an executable file (e.g. qgrain.exe on Windows) to start this app, it’s located at the <code>Scripts</code> sub-folder of your Python. If this folder is not in your <code>PATH</code>, the system can not find this executable file, and the command will raise the not found error.</p>
+<p> In order to let the modification of <code>PATH</code> come into force, you need to restart your PC.</p>
+<p> If restart did not solve your problem, you may need to check the <code>PATH</code> variable and <strong>APPEND</strong> the root and <code>Scripts</code> folders of Python to the <code>PATH</code>.</p>
+<p> For some users who do not want to modify the <code>PATH</code>, there also is another way to start QGrain.</p>
+<ol>
+<li><p>Type <code>python</code> or <code>python3</code> to enter your Python interpreter.</p>
+</li>
+<li><p>Type following codes.</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> QGrain</span><br><span class="line">QGrain.main()</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+
+      </div>
+      
+      
+      
+    </div>
+    
+
+    
+    
+    
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-install-QGrain"><span class="nav-number">1.</span> <span class="nav-text">How to install QGrain</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Use-executable-file"><span class="nav-number">1.1.</span> <span class="nav-text">1. Use executable file</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Use-Python"><span class="nav-number">1.2.</span> <span class="nav-text">2. Use Python</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Yuming Liu</p>
+  <div class="site-description" itemprop="description">Aspire to use Computer Science to solve the problems in Geoscience</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yuriok" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yuriok" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:liuyuming@ieecas.cn" title="E-Mail → mailto:liuyuming@ieecas.cn" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yuming Liu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
