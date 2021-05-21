@@ -120,12 +120,12 @@ menu:
   # about: /about/ || fa fa-user
   # tags: /tags/ || fa fa-tags
   # categories: /categories || fa fa-th
-  archives: /archives/ || fa fa-archive
+  # archives: /archives/ || fa fa-archive
   # schedule: /schedule/ || fa fa-calendar
   # sitemap: /sitemap.xml || fa fa-sitemap
   # commonweal: /404/ || fa fa-heartbeat
   Functions: /functions/ || fa fa-cubes
-  Tutorials: /categories/tutorials/ || fa fa-map
+  Tutorials: /tutorials/ || fa fa-map
 
 # Enable / Disable menu icons / item badges.
 menu_settings:

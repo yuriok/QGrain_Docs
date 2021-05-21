@@ -1,102 +1,122 @@
 ---
-title: How to install QGrain
-date: 2021-04-27 13:37:45
+title: Advanced installation
+date: 2021-05-21 19:08:45
 ---
 
-# How to install QGrain
+**Note: this way of installation is for the user who has experience in Python and Shell (i.e. command-line interface) or is willing to take the time to learn them.**
 
-**QGrain** is written by [Python](https://www.python.org/). So, it's **cross-platform**.
+The **QGrain** software actually is a [Python](https://www.python.org/) module. So, if you have experience with Python, you can install it from [PyPI](https://pypi.org/project/QGrain/). This way of installation is more flexible, because the source codes can be modified easily. If there is a low level bug, you can modify the codes to timely fix it by yourself, no need to wait for the author of QGrain to fix it and publish the new version. In addition, you can write codes to use QGrain for some special application scenarios. For example, load the fitting results and customize the plots. Python and the third-party modules used in QGrain are all **cross-platform**, this means QGrain also is cross-platform, theoretically. However, some dependent modules (e.g., `PyTorch`) may not has a binary distribution for some unpopular operating systems, you may need to solve this dependency problem by compiling these modules from sources. Don't warry, it's not a problem for most operating systems.
 
-This means it can be installed on many kinds of systems, like **Windows**, **Linux**, **Mac OS X**, etc.
+## Install the Python
 
-Moreover, due to Python's features, there are two ways to install QGrain.
+For `Linux` and `Mac OS X` users, a relatively old version of Python is built-in. `Windows` users need to install it from the offical [website](https://www.python.org/).
 
-## 1. Use executable file
+You can run the command `python` or `python3` in your `Terminal` to check if Python is existing.
 
-We have packed the executable setup file for **Windows** users. Because Windows does not have Python internally installed, and Windows users are not used to the command-line interface.
+**Note: Using `python` or `python3` depends on the alias or the filename of your Python3 interpreter, rather than you can choose Python2 or Python3 at liberty. Python2 is too old and has been obsoleted. For `Unix` like operating systems, `python3` usually is correct, and for `Windows`, `python` usually is correct.**
 
-You can download the latest version of QGrain from [here](https://github.com/QGrain-Organization/QGrain/releases).
+If you have Python3 installed on your computer, you can see the text like below. You can see the version of your Python. And the `>>>` symbols hint you that you have entered the interactive model of Python's interpreter. Type `quit()` to quit this model and back to the terminal.
 
-When the setup file was downloaded, what you need to do is double-clicking the setup file to execute the installation program.
+```bash
+username:~$ python3
+Python 3.8.5 (default, Jan 27 2021, 15:41:15)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
 
-All things are similar to other softwares on **Windows**. And then, you can see the shortcut on the desktop.
+If there is no Python, just follow the guide in the offical [website](https://www.python.org/) of Python to install it.
 
-## 2. Use Python
+## Install QGrain
 
-This method is for the user who has experience in Python and Shell (i.e. command-line interface). It uses the Python interpreter to execute the source codes of QGrain.
+We have uploaded QGrain to [PyPI](https://pypi.org/project/QGrain/). You can install it by running `pip` or `pip3` in the `Terminal`.
 
-The advantage of this method is its expansibility. Through the `pip` (the package installer for Python), you can easily download and update QGrain. If you are not satisfied with some functionalities of QGrain, or there are some small bugs, you can modify the codes by yourself to solve these problems instead of waiting for a new update to fix them.
+```bash
+pip3 install QGrain
+```
 
-1. Install Python
+For the users in China, using the mirror provided by Tsinghua University may be faster.
 
-    For Linux and Mac OS X users, you may have the built-in Python3 interpreter. You can run the command `python` or `python3` in your terminal to check if Python is existing.
+```bash
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple QGrain
+```
 
-    Note: Using `python` or `python3` depends on the alias or the filename of your Python3 interpreter, rather than you can choose Python2 or Python3 at liberty. Python2 is too old and has been obsoleted.interpreter
+Run `pip3 install -U QGrain` to check and update QGrain.
 
-    If you have Python3 installed on your computer, you can see the text like below (test on Ubuntu 18.04 LTS). You can see the version of your Python. And the `>>>` symbols hint you that you have entered the interactive model of Python's interpreter. Type `quit()` to quit this model and back to the terminal.
+If you do not have the `pip`, just use the package management tool to install it.
 
-    ```bash
-    your_user_name:~$ python3
-    Python 3.6.9 (default, Nov  7 2019, 10:44:02)
-    [GCC 8.3.0] on linux
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>>
-    ```
+For example, the command for `Ubuntu` is:
 
-    If you have not Python3 yet, you can visit the [official website of Python](https://www.python.org/downloads/) to download and install it.
+```bash
+sudo apt update
+sudo apt install python3-pip
+```
 
-    Note: If you are a **Windows** user, remember to check the **Add Python to Windows PATH** option while installing Python. If not, some commands in this tutorial may be **invalid**, due to the `PATH` mechanism of Windows.
+In addition, you can download the codes from our Github [repository](https://github.com/yuriok/QGrain/).
 
-2. Get source codes and install QGrain
+You can clone the repository by running the following command if you have `git` installed.
 
-    We have upload QGrain to [PyPI](https://pypi.org/). So, you can get the codes very expediently through `pip`. By running the following command, you can get QGrain module installed.
+```bash
+git clone https://github.com/yuriok/QGrain.git
+```
 
-    `pip install QGrain`
+Then, you will see the similar information below.
 
-    For Chinese users, this command below may be faster.
+```bash
+username:~$ git clone https://github.com/yuriok/QGrain.git
+Cloning into 'QGrain'...
+remote: Enumerating objects: 2792, done.
+remote: Counting objects: 100% (1526/1526), done.
+remote: Compressing objects: 100% (742/742), done.
+remote: Total 2792 (delta 1042), reused 1244 (delta 781), pack-reused 1266
+Receiving objects: 100% (2792/2792), 2.02 MiB | 24.00 KiB/s, done.
+Resolving deltas: 100% (1871/1871), done.
+```
 
-    `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple QGrain`
+When it finished, the source codes have been downloaded into the `QGrain` folder of the working directory. Change the working directory to `QGrain`, and use `pip` to install it.
 
-    Note: On some systems, the name of `pip` of Python3 may be `pip3`.
+```bash
+cd QGrain
+pip3 install .
+```
 
-    Run `pip install -U QGrain` to check and update QGrain.
+Or, you can download the pure codes directly by clicking [here](https://github.com/yuriok/QGrain/archive/master.zip). If you choose to download the zip file, please extract it. Then, you should change the directory to the extracted folder, and run the command `pip3 install .`.
 
-    In addition, you can download the codes from Github. The link of our repository is over [here](https://github.com/QGrain-Organization/QGrain).
-      * You can clone the repository by running the following command if you have `git` installed.
+## Try QGrain
 
-          `git clone https://github.com/QGrain-Organization/QGrain.git`
+Now, everything is ok. You can run `python3 -m QGrain` command in your terminal to start the GUI of QGrain.
 
-      * Or, you can download the pure codes directly by clicking [here](https://github.com/QGrain-Organization/QGrain/archive/master.zip).
+If it goes well, you can see the interface below.
 
-          If you choose to download the zip file, please extract it.
+![The screenshot of initial interface](/images/console.png)
 
-    Then, you should change the directory to QGrain's folder, and run the following command.
+Also, you can use QGrain as a Python module, import it in your Python codes and use the `class` and `function` provided by QGrain. For example, you can calculate the statistic parameters using the following codes. **Note: the APIs of QGrain will be changed a lot, it's not recommended to use this method for common requirements.**
 
-    `python setup.py install` or `pip install .`
+```python
+# import the method to generate artificial samples
+from QGrain.models.artificial import get_random_sample
+# import the method to calculate the statistic parameters
+from QGrain.algorithms.moments import get_moments
 
-3. Run QGrain
+# generate test sample
+sample = get_random_sample()
+# check the generating parameters
+print(sample.parameter.fractions)
+for comp in sample.parameter.components:
+    print(comp.moments)
 
-    Now, everything is ok.
+# calculate the statistic parameters
+moments = get_moments(sample.classes_μm, sample.classes_φ, sample.distribution, FW57=False)
+print(moments)
 
-    Then you can run `qgrain` command in your terminal.
+```
 
-    If it goes well, you can see the app interface below.
+You will see the calculated statistic parameters and the classification groups like below:
 
-    If the command `qgrain` was not found. It may be caused by the lack of Python's directory in the Windows `PATH` environment variable.
+```python
+({'mean': 12.565072409303028, 'std': 4.706158375497856, 'skewness': -0.7787966067475761, 'kurtosis': 2.7317145943361987, 'std_description': 'Very poorly sorted', 'skewness_description': 'Fine skewed', 'kurtosis_description': 'Mesokurtic', 'mean_description': 'Medium Silt', 'mode': 35.565588200778436, 'modes': (5.023772863019158, 35.565588200778436), 'median': 19.416585200230955, 'GSM_proportion': (0.0, 0.1187, 0.8813), 'SSC_proportion': (0.1187, 0.7322, 0.1491), 'BGSSC_proportion': (0.0, 0.0, 0.1187, 0.7322, 0.1491), 'textural_group_Folk54': 'Sandy Slit', 'textural_group_BP12_symbol': '(s)(c)SI', 'textural_group_BP12': 'Slightly Sandy Slightly Clayey Silt'}, {'mean': 6.314437204649162, 'std': 2.234549872134817, 'skewness': 0.7787966067475749, 'kurtosis': 2.731714594336198, 'std_description': 'Very poorly sorted', 'skewness_description': 'Fine skewed', 'kurtosis_description': 'Mesokurtic', 'mean_description': 'Medium Silt', 'mode': 4.813374166052885, 'modes': (7.637013046707143, 4.813374166052885), 'median': 5.686566693851849, 'GSM_proportion': (0.0, 0.1187, 0.8813), 'SSC_proportion': (0.1187, 0.7322, 0.1491), 'BGSSC_proportion': (0.0, 0.0, 0.1187, 0.7322, 0.1491), 'textural_group_Folk54': 'Sandy Slit', 'textural_group_BP12_symbol': '(s)(c)SI', 'textural_group_BP12': 'Slightly Sandy Slightly Clayey Silt'})
+```
 
-    Because QGrain will generate an executable file (e.g. qgrain.exe on Windows) to start this app, it's located at the `Scripts` sub-folder of your Python. If this folder is not in your `PATH`, the system can not find this executable file, and the command will raise the not found error.
+## Enable CUDA
 
-    In order to let the modification of `PATH` come into force, you need to restart your PC.
-
-    If restart did not solve your problem, you may need to check the `PATH` variable and **APPEND** the root and `Scripts` folders of Python to the `PATH`.
-
-    For some users who do not want to modify the `PATH`, there also is another way to start QGrain.
-
-    1. Type `python` or `python3` to enter your Python interpreter.
-
-    2. Type following codes.
-
-        ```python
-        import QGrain
-        QGrain.main()
-        ```
+Some functions (e.g., EMMA) of QGrain could use CUDA to accelerate the computation. By default, QGrain will install the CPU version of PyTorch, because not all users have a high-performance NVIDA GPU, and CPU is faster to handle a small dataset. It needs more steps to enable the CUDA, not only install a CUDA version of PyTorch, [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit/) and [CUDNN](http://developer.nvidia.com/cudnn/) also should be installed. Follow the guides of [PyTorch](https://pytorch.org/) and NVIDA to install them. If all of them have been installed, the `CUDA` option in the `device` setting could be selected.

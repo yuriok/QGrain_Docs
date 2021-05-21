@@ -5,7 +5,9 @@ date: 2021-05-20 16:37:45
 
 ## The aim of QGrain
 
-**QGrain aims to provide an easy-to-use and comprehensive analysis platform for grain-size distributions.** QGrain has implemented many functions, however, there still are many useful tools that have not been contained. Hence, we published QGrain as an open-source project, and welcome other researchers to contribute their ideas and codes. Codes are available at this GitHub [repository](https://github.com/yuriok/QGrain/).
+![The logo of QGrain, Copyright 2021 Yuming Liu, All rights reserved](/images/icon.png)
+
+QGrain aims to provide an easy-to-use and comprehensive analysis platform for grain-size distributions. QGrain has implemented many functions, however, there still are many useful tools that have not been contained. Hence, we published QGrain as an open-source project, and welcome other researchers to contribute their ideas and codes. Codes are available at this GitHub [repository](https://github.com/yuriok/QGrain/).
 
 ## Technical route
 
@@ -30,6 +32,18 @@ Then, run it by the the command below.
 ```bash
 python3 -m QGrain
 ```
+
+Finally, you will see the `Console` interface of QGrain.
+
+![The screenshot of initial interface](/images/console.png)
+
+## Functions
+
+The detialed introduce of these functions is [here](/functions).
+
+## Tutorials
+
+Click [here](/tutorials) to see more tutorials.
 
 ## Contact
 
