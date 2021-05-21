@@ -165,9 +165,9 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/icon.png
   # If true, the avatar will be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
   rotated: false
 
@@ -424,7 +424,7 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Helvetica
+    family: Times New Roman
     size:
 
   # Font settings for site title (.site-title).
@@ -436,13 +436,13 @@ font:
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family: Trebuchet MS
+    family: Times New Roman
     size:
 
   # Font settings for posts (.post-body).
   posts:
     external: true
-    family: Helvetica
+    family: Times New Roman
 
   # Font settings for <code> and code blocks.
   codes:
