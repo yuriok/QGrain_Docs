@@ -52,7 +52,7 @@ sudo apt update
 sudo apt install python3-pip
 ```
 
-In addition, you can download the codes from our Github [repository](https://github.com/yuriok/QGrain/).
+In addition, you can download the codes from our GitHub [repository](https://github.com/yuriok/QGrain/).
 
 You can clone the repository by running the following command if you have `git` installed.
 
