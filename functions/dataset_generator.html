@@ -20,19 +20,21 @@
     var CONFIG = {"hostname":"qgrain.net","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="You can check the table below for the functions provided by current version of QGrain. More functions are considering to be added, e.g. the CM diagram (Passega, 1964). If you has more requirements, pl">
+  <meta name="description" content="This module is designed to generate the artificial datasets for the test of algorithms. If you want to try QGrain but has not any dataset, this module may be helpful. Or, if you are not clear with the">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Functions of QGrain">
-<meta property="og:url" content="http://qgrain.net/functions/index.html">
+<meta property="og:title" content="Dataset Generator">
+<meta property="og:url" content="http://qgrain.net/functions/dataset_generator.html">
 <meta property="og:site_name" content="QGrain">
-<meta property="og:description" content="You can check the table below for the functions provided by current version of QGrain. More functions are considering to be added, e.g. the CM diagram (Passega, 1964). If you has more requirements, pl">
+<meta property="og:description" content="This module is designed to generate the artificial datasets for the test of algorithms. If you want to try QGrain but has not any dataset, this module may be helpful. Or, if you are not clear with the">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://qgrain.net/images/dataset_generator.png">
 <meta property="article:published_time" content="2021-05-22T22:45:24.000Z">
 <meta property="article:modified_time" content="2021-05-22T07:22:15.861Z">
 <meta property="article:author" content="Yuming Liu">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://qgrain.net/images/dataset_generator.png">
 
-<link rel="canonical" href="http://qgrain.net/functions/">
+<link rel="canonical" href="http://qgrain.net/functions/dataset_generator">
 
 
 <script id="page-configurations">
@@ -45,7 +47,7 @@
   };
 </script>
 
-  <title>Functions of QGrain | QGrain
+  <title>Dataset Generator | QGrain
 </title>
   
 
@@ -161,7 +163,7 @@
     <div class="post-block" lang="en">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">Functions of QGrain<a href="https://github.com/yuriok/QGrain_Docs/edit/master/source/functions/index.md" class="post-edit-link" title="Edit this post" rel="noopener" target="_blank"><i class="fa fa-pencil-alt"></i></a>
+<h1 class="post-title" itemprop="name headline">Dataset Generator<a href="https://github.com/yuriok/QGrain_Docs/edit/master/source/functions/dataset_generator.md" class="post-edit-link" title="Edit this post" rel="noopener" target="_blank"><i class="fa fa-pencil-alt"></i></a>
 </h1>
 
 <div class="post-meta">
@@ -175,66 +177,24 @@
       
       
       <div class="post-body">
-          <p>You can check the table below for the functions provided by current version of QGrain. More functions are considering to be added, e.g. the CM diagram (Passega, 1964). If you has more requirements, please feel free to tell the <a href="mailto:liuyuming@ieecas.cn">author</a>.</p>
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Description</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Dataset Generator</td>
-<td>Generate the artificial dataset to test the functions of QGrain, generating parameters could be fully customized</td>
-<td><a href="./dataset_generator">Dataset Generator</a></td>
-</tr>
-<tr>
-<td>Frequencey curve chart</td>
-<td>Plot the chart of frequency curves of samples</td>
-<td><a href="./dataset_viewer">Dataset Viewer</a></td>
-</tr>
-<tr>
-<td>Accumulative curve chart</td>
-<td>Plot the chart of accumulative curves of samples</td>
-<td><a href="./dataset_viewer">Dataset Viewer</a></td>
-</tr>
-<tr>
-<td>Frequencey 3D chart</td>
-<td>Plot the GSDs of samples as a 3D surface, easy to recognize the variations of GSDs in the stratigraphic sequence</td>
-<td><a href="./dataset_viewer">Dataset Viewer</a></td>
-</tr>
-<tr>
-<td>Statistic parameters</td>
-<td>Calculate the statistic parameters (e.g. mean, sorting, skewness, kurtosis) of grain-size distributions (GSDs)</td>
-<td><a href="./dataset_viewer">Dataset Viewer</a></td>
-</tr>
-<tr>
-<td>GSD classification</td>
-<td>Plot the gravel-sand-mud and sand-silt-clay diagrams of GSDs, also support the automatic classification of GSDs, including Folk’s (1954) and Blott &amp; Pye’s (2012) classification scheme.</td>
-<td><a href="./dataset_viewer">Dataset Viewer</a></td>
-</tr>
-<tr>
-<td>PCA</td>
-<td>Apply the principal component analysis (PCA) algorithm to extract the major and minor signal series in a grain-size dataset.</td>
-<td><a href="./pca_resolver">PCA Resolver</a></td>
-</tr>
-<tr>
-<td>HC</td>
-<td>Perform a hierarchical clustering (HC) algorithm to have an overall cognition and pick out the typical samples of a grain-size dataset. Also could be used to briefly classify the sedimentary facies.</td>
-<td><a href="./hc_resolver">HC Resolver</a></td>
-</tr>
-<tr>
-<td>EMMA</td>
-<td>Provide a new end-member modelling analysis (EMMA) algorithm based on the basic neural network to unmix the grain-size distributions and extract the latent information of paleoenvironments and paleoclimates.</td>
-<td><a href="./emma_resolver">EMMA Resolver</a></td>
-</tr>
-<tr>
-<td>SSU</td>
-<td>Single sample unmixing (SSU) is another unmixing method to separate the mixed grain-size distributions. Due to the natural difficulty of SSU problem, SSU may yield abnormal results and hence be underestimated. To satisfy the existing requirements, a new and enhanced SSU algorithm is provided.</td>
-<td><a href="./ssu_resolver">SSU Resolver</a></td>
-</tr>
-</tbody></table>
+          <p>This module is designed to generate the artificial datasets for the test of algorithms. If you want to try QGrain but has not any dataset, this module may be helpful. Or, if you are not clear with the functions and settings of the algorithms provided in QGrain, you can generate a series different datasets to explore their impacts. Of course, it could be used to generate some difficult datasets to test the performances of these algorithms. By generating a similar dataset as your real-world dataset, you could make sure whether these algorithms could handle your real-world dataset well, because all original information of an artificial dataset is known.</p>
+<h2 id="Method-of-generation"><a href="#Method-of-generation" class="headerlink" title="Method of generation"></a>Method of generation</h2><p>A polymodal sample could be regarded as the mixture of several unimodal sub-populations, and the sub-population could be associated to a certain sedimentary process. Based on this theoretical model, it’s very easy to generate artificial samples. We use the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Skew_normal_distribution">Skew Normal</a> distribution as the elementary distribution to generate the sub-populations. Skew Normal distribution is base the Normal (Gaussian) distribution, but provides an additional parameter to control the skewness. Therefore, it’s more flexible than Normal distribution, each elementary distribution has three parameters, <code>shape</code> ($\alpha$), <code>location</code> ($\mu$) and <code>scale</code> ($\sigma$). The <code>shape</code> ($\alpha$) controls its skewness, when $\alpha=0$, it becomes the Normal distribution. <strong>Note: due to its mathematical definition, the the skewness ($S_k$) is limited to the interval $(-1,1)$.</strong> The interval integral should be applied to the probability density function (PDF) to transform it to frequency. Multiply the proportions of sub-populations to their frequencies, and then sum them, the mixed frequency is obtained. By calculating the frequency of each grain-size class, we can get the artificial sample. In order to simulate the actual observation, values will be rounded to the precision (e.g., 0.01%), and a group of Gaussian noise (an order of magnitude less than precision) will be overlaied on it. To make the samples random, each parameter is randomly generated and controled by mean $\mu_p$ and standard deviation $\sigma_p$ of a normal distribution.</p>
+<h2 id="Mathematical-definition"><a href="#Mathematical-definition" class="headerlink" title="Mathematical definition"></a>Mathematical definition</h2><p>Let $\phi(x)$ denote the PDF of standard Normal distribution, there is</p>
+<p>$$\phi(x)=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{x^2}{2}\right),$$</p>
+<p>with the cumulative distribution function given by</p>
+<p>$$\Phi(x) = \int_{-\infty}^{x} \phi(t)\ dt = \frac{1}{2}\left[1+\operatorname{erf}\left(\frac{x}{\sqrt{2}}\right)\right],$$</p>
+<p>where $\operatorname{erf}$ is the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Error_function">error</a> function. Then the PDF of the Skew Normal distribution with parameter $\alpha$ is given by</p>
+<p>$$f(x)=2\phi(x)\Phi(\alpha x).$$</p>
+<p>To add location ($\mu$) and scale ($\sigma$) parameters, one makes the usual transform $x\rightarrow{\frac{x-\mu}{\sigma}}$. Then, the PDF becomes</p>
+<p>$$f(x)={\frac{2}{\sigma}}\phi \left({\frac{x-\mu}{\sigma}}\right)\Phi \left(\alpha \left({\frac{x-\mu}{\sigma}}\right)\right).$$</p>
+<p>To transform density to frequency, a interval integral should be applied</p>
+<p>$$y_i = \int_{\phi_i-\frac{\delta}{2}}^{\phi_i+\frac{\delta}{2}} f(\phi_i),$$</p>
+<p>where $y_i$ is the frequency of i-th grain-size class, $\phi_i$ is its grain-size in $\phi$, $\delta$ is the interval of two grain-size classes (in $\phi$).</p>
+<p>Mixed frequency is</p>
+<p>$$y_{mixed} = p_1 \cdot y_1 + p_2 \cdot y_2 + \cdots + p_c \cdot y_c,$$</p>
+<p>where $p_c$ is the proportion of the c-th component.</p>
+<h2 id="Interface"><a href="#Interface" class="headerlink" title="Interface"></a>Interface</h2><p>The figure below shows the interface of <code>Dataset Generator</code>. At the <code>Sampling</code> box, you can control the sampling settings, i.e., sampling range, interval ($N_{classes}$) and precision. In addition, you can change $N_{components}$ to control the number of component distributions to be mixed, it also controls the number of widgets in the <code>Random Parameter</code> box. By clicking the <code>Preview</code> button, artificial samples will be generated and displayed (in <code>Preview</code> box) successively, using the random parameters in the <code>Random Parameter</code> box. Each row of widgets is corresponding to the $\mu_p$ and $\sigma_p$ of a parameter. Finally, adjust the number of samples ($N_{samples}$) and click the <code>Generate</code> button, the artificial dataset will be saved into a Excel file. Click <a href="/datasets/artificial_dataset_example.xlsx">here</a> to download an example file.</p>
+<p><img src="/images/dataset_generator.png" alt="The screenshot of Dataset Generator interface"></p>
 
       </div>
       
@@ -296,6 +256,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Method-of-generation"><span class="nav-number">1.</span> <span class="nav-text">Method of generation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mathematical-definition"><span class="nav-number">2.</span> <span class="nav-text">Mathematical definition</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Interface"><span class="nav-number">3.</span> <span class="nav-text">Interface</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -397,6 +358,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
