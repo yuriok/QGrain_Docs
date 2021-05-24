@@ -96,7 +96,7 @@ Also, you can use QGrain as a Python module, import it in your Python codes and 
 # import the method to generate artificial samples
 from QGrain.models.artificial import get_random_sample
 # import the method to calculate the statistic parameters
-from QGrain.algorithms.moments import get_moments
+from QGrain.statistic import get_all_statistic
 
 # generate test sample
 sample = get_random_sample()
@@ -105,16 +105,16 @@ print(sample.parameter.fractions)
 for comp in sample.parameter.components:
     print(comp.moments)
 
-# calculate the statistic parameters
-moments = get_moments(sample.classes_μm, sample.classes_φ, sample.distribution, FW57=False)
-print(moments)
+# get the statistic parameters and classification groups
+all_statistic = get_all_statistic(sample.classes_μm, sample.classes_φ, sample.distribution)
+print(all_statistic)
 
 ```
 
-You will see the calculated statistic parameters and the classification groups like below:
+You will see the statistic parameters and the classification groups like below:
 
 ```python
-({'mean': 12.565072409303028, 'std': 4.706158375497856, 'skewness': -0.7787966067475761, 'kurtosis': 2.7317145943361987, 'std_description': 'Very poorly sorted', 'skewness_description': 'Fine skewed', 'kurtosis_description': 'Mesokurtic', 'mean_description': 'Medium Silt', 'mode': 35.565588200778436, 'modes': (5.023772863019158, 35.565588200778436), 'median': 19.416585200230955, 'GSM_proportion': (0.0, 0.1187, 0.8813), 'SSC_proportion': (0.1187, 0.7322, 0.1491), 'BGSSC_proportion': (0.0, 0.0, 0.1187, 0.7322, 0.1491), 'textural_group_Folk54': 'Sandy Slit', 'textural_group_BP12_symbol': '(s)(c)SI', 'textural_group_BP12': 'Slightly Sandy Slightly Clayey Silt'}, {'mean': 6.314437204649162, 'std': 2.234549872134817, 'skewness': 0.7787966067475749, 'kurtosis': 2.731714594336198, 'std_description': 'Very poorly sorted', 'skewness_description': 'Fine skewed', 'kurtosis_description': 'Mesokurtic', 'mean_description': 'Medium Silt', 'mode': 4.813374166052885, 'modes': (7.637013046707143, 4.813374166052885), 'median': 5.686566693851849, 'GSM_proportion': (0.0, 0.1187, 0.8813), 'SSC_proportion': (0.1187, 0.7322, 0.1491), 'BGSSC_proportion': (0.0, 0.0, 0.1187, 0.7322, 0.1491), 'textural_group_Folk54': 'Sandy Slit', 'textural_group_BP12_symbol': '(s)(c)SI', 'textural_group_BP12': 'Slightly Sandy Slightly Clayey Silt'})
+{'arithmetic': {'mean': 21.144515863718222, 'std': 25.084414158797554, 'skewness': 2.920857741744253, 'kurtosis': 18.730985063587315}, 'geometric': {'mean': 9.684134657536994, 'std': 4.428361711788003, 'skewness': -0.6767708384230607, 'kurtosis': 2.716874606082691, 'std_description': 'Very poorly sorted', 'skewness_description': 'Fine skewed', 'kurtosis_description': 'Mesokurtic', 'median': 12.810636058031518, 'mean_description': 'Medium Silt', 'mode': 22.44036908603928, 'modes': (0.8933671843019261, 22.44036908603928)}, 'logarithmic': {'mean': 6.6981337719919, 'std': 2.1467781514716644, 'skewness': 0.6656247900909836, 'kurtosis': 2.706878223445299, 'std_description': 'Very poorly sorted', 'skewness_description': 'Fine skewed', 'kurtosis_description': 'Mesokurtic', 'median': 6.2865140813873825, 'mean_description': 'Medium Silt', 'mode': 5.477759785030356, 'modes': (10.128459117872664, 5.477759785030356)}, 'geometric_FW57': {'mean': 9.095310169432295, 'std': 4.5648431593499135, 'skewness': -0.3327285931766691, 'kurtosis': 0.9931902091662234, 'std_description': 'Very poorly sorted', 'skewness_description': 'Very fine skewed', 'kurtosis_description': 'Mesokurtic', 'median': 12.810636058031518, 'mean_description': 'Medium Silt', 'mode': 22.44036908603928, 'modes': (0.8933671843019261, 22.44036908603928)}, 'logarithmic_FW57': {'mean': 6.780661446975351, 'std': 2.190565292385788, 'skewness': 0.33272859317666903, 'kurtosis': 0.9931902091662237, 'std_description': 'Very poorly sorted', 'skewness_description': 'Very fine skewed', 'kurtosis_description': 'Mesokurtic', 'median': 6.2865140813873825, 'mean_description': 'Medium Silt', 'mode': 5.477759785030356, 'modes': (10.128459117872664, 5.477759785030356)}, 'GSM_proportion': (0.0, 0.0681, 0.9327000000000001), 'SSC_proportion': (0.0681, 0.7625000000000002, 0.1702), 'BGSSC_proportion': (0.0, 0.0, 0.0681, 0.7625000000000002, 0.1702), 'proportion': {('', 'Megaclasts'): 0.0, ('Very large', 'Boulder'): 0.0, ('Large', 'Boulder'): 0.0, ('Medium', 'Boulder'): 0.0, ('Small', 'Boulder'): 0.0, ('Very small', 'Boulder'): 0.0, ('Very coarse', 'Gravel'): 0.0, ('Coarse', 'Gravel'): 0.0, ('Medium', 'Gravel'): 0.0, ('Fine', 'Gravel'): 0.0, ('Very fine', 'Gravel'): 0.0, ('Very coarse', 'Sand'): 0.0, ('Coarse', 'Sand'): 0.0, ('Medium', 'Sand'): 0.0005, ('Fine', 'Sand'): 0.0088, ('Very fine', 'Sand'): 0.0588, ('Very coarse', 'Silt'): 0.1722, ('Coarse', 'Silt'): 0.23059999999999997, ('Medium', 'Silt'): 0.17370000000000002, ('Fine', 'Silt'): 0.1119, ('Very fine', 'Silt'): 0.0741, ('Very coarse', 'Clay'): 0.0654, ('Coarse', 'Clay'): 0.0638, ('Medium', 'Clay'): 0.03320000000000001, ('Fine', 'Clay'): 0.0070999999999999995, ('Very fine', 'Clay'): 0.0007}, 'group_Folk54': 'Slit', '_group_BP12_symbols': ['(s)', '(c)', 'SI'], 'group_BP12_symbol': '(s)(c)SI', 'group_BP12': 'Slightly Sandy Slightly Clayey Silt'}
 ```
 
 ## Enable CUDA
