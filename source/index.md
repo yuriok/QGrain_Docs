@@ -1,5 +1,5 @@
 ---
-title: A brief introduce of the QGrian software
+title: A brief introduce of the QGrain software
 date: 2021-05-20 16:37:45
 ---
 
