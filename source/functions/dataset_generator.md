@@ -44,4 +44,4 @@ where $p_c$ is the proportion of the c-th component.
 
 The figure below shows the interface of `Dataset Generator`. At the `Sampling` box, you can control the sampling settings, i.e., sampling range, interval ($N_{classes}$) and precision. In addition, you can change $N_{components}$ to control the number of component distributions to be mixed, it also controls the number of widgets in the `Random Parameter` box. By clicking the `Preview` button, artificial samples will be generated and displayed (in `Preview` box) successively, using the random parameters in the `Random Parameter` box. Each row of widgets is corresponding to the $\mu_p$ and $\sigma_p$ of a parameter. Finally, adjust the number of samples ($N_{samples}$) and click the `Generate` button, the artificial dataset will be saved into a Excel file. Click [here](/datasets/artificial_dataset_example.xlsx) to download an example file.
 
-![The screenshot of Dataset Generator interface](/images/dataset_generator.png)
+![The screenshot of Dataset Generator's interface](/images/dataset_generator.png)
