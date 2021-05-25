@@ -39,7 +39,7 @@ Finally, you will see the `Console` interface of QGrain.
 
 ## Functions
 
-The detialed introduce of these functions is [here](/functions).
+The detailed introduction of these functions is [here](/functions).
 
 * [Dataset Generator](/functions/dataset_generator)
 
