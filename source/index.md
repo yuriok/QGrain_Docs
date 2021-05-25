@@ -41,9 +41,15 @@ Finally, you will see the `Console` interface of QGrain.
 
 The detialed introduce of these functions is [here](/functions).
 
+* [Dataset Generator](/functions/dataset_generator)
+
+* [Dataset Viewer](/functions/dataset_viewer)
+
 ## Tutorials
 
 Click [here](/tutorials) to see more tutorials.
+
+* [Advanced installation](/tutorials/install)
 
 ## Contact
 
