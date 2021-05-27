@@ -15,19 +15,15 @@ To achieve QGrain’s aim, the software techniques were advisedly chosen. [Pytho
 
 ## Quick install
 
-We have packed the setup file for **Windows** users, just download and run it.
+We have packed the setup file for **Windows** users, just download and run it. You can download the latest version from [GitHub](https://github.com/yuriok/QGrain/releases/). Or, you can download it from [Google Drive](https://drive.google.com/drive/folders/1Z-xUVpxml9XHPWd0LOgxjtchCPMd1-tn?usp=sharing). For the users in China, you can download it from [Baidu Drive](https://pan.baidu.com/s/1hau7AruPkpgvzjF-mMCQaQ/), with code: 8bzg.
 
-You can download the latest version from [GitHub](https://github.com/yuriok/QGrain/releases/).
-
-Or, you can download it from [Google Drive](https://drive.google.com/drive/folders/1Z-xUVpxml9XHPWd0LOgxjtchCPMd1-tn?usp=sharing). For the users in China, you can download it from [Baidu Drive](https://pan.baidu.com/s/1hau7AruPkpgvzjF-mMCQaQ/), with code: 8bzg.
-
-For Linux and Mac OS X users, you can install QGrain as a Python module.
+For Linux and Mac OS X users, you can install QGrain as a Python module, because the Python interpreter is built-in.
 
 ```bash
 pip3 install QGrain
 ```
 
-Then, run it by the the command below.
+Then, run it by the the command below in your `Terminal`.
 
 ```bash
 python3 -m QGrain
