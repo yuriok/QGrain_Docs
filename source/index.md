@@ -23,7 +23,7 @@ For Linux and Mac OS X users, you can install QGrain as a Python module, because
 pip3 install QGrain
 ```
 
-Then, run it by the the command below in your `Terminal`.
+Then, start the GUI of QGrain by running the command below in your `Terminal`.
 
 ```bash
 python3 -m QGrain
@@ -31,7 +31,7 @@ python3 -m QGrain
 
 Finally, you will see the `Console` interface of QGrain.
 
-![The screenshot of initial interface](/images/console.png)
+![The screenshot of the initial interface](/images/console.png)
 
 ## Functions
 
