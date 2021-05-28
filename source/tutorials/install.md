@@ -5,17 +5,17 @@ date: 2021-05-21 19:08:45
 
 **Note: this way of installation is for the user who has experience in Python and Shell (i.e. command-line interface) or is willing to take the time to learn them.**
 
-The **QGrain** software actually is a [Python](https://www.python.org/) module. So, if you have experience with Python, you can install it from [PyPI](https://pypi.org/project/QGrain/). This way of installation is more flexible, because the source codes can be modified easily. If there is a low level bug, you can modify the codes to timely fix it by yourself, no need to wait for the author of QGrain to fix it and publish the new version. In addition, you can write codes to use QGrain for some special application scenarios. For example, load the fitting results and customize the plots. Python and the third-party modules used in QGrain are all **cross-platform**, this means QGrain also is cross-platform, theoretically. However, some dependent modules (e.g., `PyTorch`) may not has a binary distribution for some unpopular operating systems, you may need to solve this dependency problem by compiling these modules from sources. Don't warry, it's not a problem for most operating systems.
+The **QGrain** software is a [Python](https://www.python.org/) module. So, if you have experience with Python, you can install it from [PyPI](https://pypi.org/project/QGrain/). This way of installation is more flexible because the source codes can be modified easily. If there is a low-level bug, you can modify the codes to timely fix it by yourself, no need to wait for the author of QGrain to fix it and publish the new version. In addition, you can write codes to use QGrain for some special application scenarios. For example, load the fitting results and customize the plots. Python and the third-party modules used in QGrain are all **cross-platform**, this means QGrain also is cross-platform, theoretically. However, some dependent modules (e.g., `PyTorch`) may not have a binary distribution for some unpopular operating systems, you may need to solve this dependency problem by compiling these modules from sources. Don't worry, it's not a problem for most operating systems.
 
 ## Install the Python
 
-For `Linux` and `Mac OS X` users, a relatively old version of Python is built-in. `Windows` users need to install it from the offical [website](https://www.python.org/).
+For `Linux` and `Mac OS X` users, a relatively old version of Python is built-in. `Windows` users need to install it from the official [website](https://www.python.org/).
 
 You can run the command `python` or `python3` in your `Terminal` to check if Python is existing.
 
-**Note: Using `python` or `python3` depends on the alias or the filename of your Python3 interpreter, rather than you can choose Python2 or Python3 at liberty. Python2 is too old and has been obsoleted. For `Unix` like operating systems, `python3` usually is correct, and for `Windows`, `python` usually is correct.**
+**Note: Using `python` or `python3` depends on the alias or the filename of your Python3 interpreter, rather than you can choose Python2 or Python3 at liberty. Python2 is too old and has been obsoleted. For `Unix-like` operating systems, `python3` usually is correct, and for `Windows`, `python` usually is correct.**
 
-If you have Python3 installed on your computer, you can see the text like below. You can see the version of your Python. And the `>>>` symbols hint you that you have entered the interactive model of Python's interpreter. Type `quit()` to quit this model and back to the terminal.
+If you have Python3 installed on your computer, you can see the text which is similar to below. You can see the version of your Python. And the `>>>` symbols hint that you have entered the interactive model of Python's interpreter. Type `quit()` to quit this model and back to the terminal.
 
 ```bash
 username:~$ python3
@@ -25,7 +25,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-If there is no Python, just follow the guide in the offical [website](https://www.python.org/) of Python to install it.
+If there is no Python, just follow the guide in the official [website](https://www.python.org/) of Python to install it.
 
 ## Install QGrain
 
@@ -60,7 +60,7 @@ You can clone the repository by running the following command if you have `git` 
 git clone https://github.com/yuriok/QGrain.git
 ```
 
-Then, you will see the similar information below.
+Then, you will see similar information below.
 
 ```bash
 username:~$ git clone https://github.com/yuriok/QGrain.git
@@ -88,7 +88,7 @@ Now, everything is ok. You can run `python3 -m QGrain` command in your terminal 
 
 If it goes well, you can see the interface below.
 
-![The screenshot of initial interface](/images/console.png)
+![The screenshot of the initial interface](/images/console.png)
 
 Also, you can use QGrain as a Python module, import it in your Python codes and use the `class` and `function` provided by QGrain. For example, you can calculate the statistic parameters using the following codes. **Note: the APIs of QGrain will be changed a lot, it's not recommended to use this method for common requirements.**
 
