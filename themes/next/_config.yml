@@ -364,7 +364,7 @@ codeblock:
     # Show text copy result.
     show_result: true
     # Available values: default | flat | mac
-    style:
+    style: mac
 
 back2top:
   enable: true
@@ -424,19 +424,19 @@ font:
 
   # Global font settings used for all elements inside <body>.
   global:
-    external: true
+    external: false
     family: Times New Roman
     size:
 
   # Font settings for site title (.site-title).
   title:
-    external: true
+    external: false
     family: Comic Sans MS
     size:
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
-    external: true
+    external: false
     family: Times New Roman
     size:
 
@@ -447,7 +447,7 @@ font:
 
   # Font settings for <code> and code blocks.
   codes:
-    external: true
+    external: false
     family: Courier New
 
 
@@ -890,9 +890,9 @@ vendors:
   anime:
 
   # Internal version: 5.13.0
-  # fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
+  fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
   # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
-  fontawesome:
+  # fontawesome:
 
   # MathJax
   mathjax: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
