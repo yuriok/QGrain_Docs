@@ -31,7 +31,7 @@
 <meta property="og:image" content="http://qgrain.net/images/icon.png">
 <meta property="og:image" content="http://qgrain.net/images/console.png">
 <meta property="article:published_time" content="2021-05-20T16:37:45.000Z">
-<meta property="article:modified_time" content="2021-05-25T07:01:18.011Z">
+<meta property="article:modified_time" content="2021-05-28T03:48:26.553Z">
 <meta property="article:author" content="Yuming Liu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://qgrain.net/images/icon.png">
@@ -185,18 +185,16 @@
           <h2 id="The-aim-of-QGrain"><a href="#The-aim-of-QGrain" class="headerlink" title="The aim of QGrain"></a>The aim of QGrain</h2><p><img src="/images/icon.png" alt="The logo of QGrain, Copyright 2021 Yuming Liu, All rights reserved"></p>
 <p>QGrain aims to provide an easy-to-use and comprehensive analysis platform for grain-size distributions. QGrain has implemented many functions, however, there still are many useful tools that have not been contained. Hence, we published QGrain as an open-source project, and welcome other researchers to contribute their ideas and codes. Codes are available at this GitHub <a target="_blank" rel="noopener" href="https://github.com/yuriok/QGrain/">repository</a>.</p>
 <h2 id="Technical-route"><a href="#Technical-route" class="headerlink" title="Technical route"></a>Technical route</h2><p>To achieve QGrain’s aim, the software techniques were advisedly chosen. <a target="_blank" rel="noopener" href="https://www.python.org/">Python</a>, the programing language which has been widely used in scientific computation, machine learning, and many other fields, was chosen as the major developing language of QGrain. Python’s syntax is concise and easy to learn. And comparing to other same type languages, <a target="_blank" rel="noopener" href="https://www.r-project.org/">R</a> and <a target="_blank" rel="noopener" href="https://www.mathworks.com/">MATLAB</a>, Python is open-source and FREE (can be modified at will, and need not pay), and its community is more prosperous. A large number of mature modules (e.g., <a target="_blank" rel="noopener" href="https://matplotlib.org/">Matplotlib</a>, <a target="_blank" rel="noopener" href="https://numpy.org/">NumPy</a>, <a target="_blank" rel="noopener" href="https://www.scipy.org/">SciPy</a>, <a target="_blank" rel="noopener" href="https://scikit-learn.org/">scikit-learn</a>, and <a target="_blank" rel="noopener" href="https://pytorch.org/">PyTorch</a>) could be used, which means many repetitive underlying codes need not be written, this enables developers could focus on their specific scientific problems. To make QGrain easy-to-use, it’s necessary to provide a well-designed <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Graphical_user_interface/">GUI</a> for users who do not know to program. Till the latest version (0.3.2), near 9000 lines of codes were wrote and about 2/3 of them were used to build the GUI. The GUI of QGrain was based on the well-known <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Cross-platform_software/">cross-platform</a> GUI platform, <a target="_blank" rel="noopener" href="https://www.qt.io/qt-for-python/">Qt</a>, this makes QGrain is also cross-platform. QGrain also provides many charts with publishing quality base on the widely-used visualization library, <a target="_blank" rel="noopener" href="https://matplotlib.org/">Matplotlib</a>.</p>
-<h2 id="Quick-install"><a href="#Quick-install" class="headerlink" title="Quick install"></a>Quick install</h2><p>We have packed the setup file for <strong>Windows</strong> users, just download and run it.</p>
-<p>You can download the latest version from <a target="_blank" rel="noopener" href="https://github.com/yuriok/QGrain/releases/">GitHub</a>.</p>
-<p>Or, you can download it from <a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1Z-xUVpxml9XHPWd0LOgxjtchCPMd1-tn?usp=sharing">Google Drive</a>. For the users in China, you can download it from <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1hau7AruPkpgvzjF-mMCQaQ/">Baidu Drive</a>, with code: 8bzg.</p>
-<p>For Linux and Mac OS X users, you can install QGrain as a Python module.</p>
+<h2 id="Quick-install"><a href="#Quick-install" class="headerlink" title="Quick install"></a>Quick install</h2><p>We have packed the setup file for <strong>Windows</strong> users, just download and run it. You can download the latest version from <a target="_blank" rel="noopener" href="https://github.com/yuriok/QGrain/releases/">GitHub</a>. Or, you can download it from <a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1Z-xUVpxml9XHPWd0LOgxjtchCPMd1-tn?usp=sharing">Google Drive</a>. For the users in China, you can download it from <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1hau7AruPkpgvzjF-mMCQaQ/">Baidu Drive</a>, with code: 8bzg.</p>
+<p>For Linux and Mac OS X users, you can install QGrain as a Python module, because the Python interpreter is built-in.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install QGrain</span><br></pre></td></tr></table></figure>
 
-<p>Then, run it by the the command below.</p>
+<p>Then, run it by the the command below in your <code>Terminal</code>.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 -m QGrain</span><br></pre></td></tr></table></figure>
 
 <p>Finally, you will see the <code>Console</code> interface of QGrain.</p>
 <p><img src="/images/console.png" alt="The screenshot of initial interface"></p>
-<h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><p>The detialed introduce of these functions is <a href="/functions">here</a>.</p>
+<h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><p>The detailed introduction of these functions is <a href="/functions">here</a>.</p>
 <ul>
 <li><p><a href="/functions/dataset_generator">Dataset Generator</a></p>
 </li>
@@ -320,7 +318,11 @@
   <span class="author" itemprop="copyrightHolder">Yuming Liu</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
-  </div><script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+  </div>
+
+<div class="website-record-number">
+  <a target="_blank" rel="noopener" href="http://www.miitbeian.gov.cn/">赣ICP备2021004822号</a>
+</div><script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 
 
         
