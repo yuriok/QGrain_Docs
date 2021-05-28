@@ -41,6 +41,8 @@ The detailed introduction of these functions is [here](/functions).
 
 * [Dataset Viewer](/functions/dataset_viewer)
 
+* [PCA Resolver](/functions/pca_resolver)
+
 ## Tutorials
 
 Click [here](/tutorials) to see more tutorials.
