@@ -43,6 +43,8 @@ The detailed introduction of these functions is [here](/functions).
 
 * [PCA Resolver](/functions/pca_resolver)
 
+* [HC Resolver](/functions/hc_resolver)
+
 ## Tutorials
 
 Click [here](/tutorials) to see more tutorials.
