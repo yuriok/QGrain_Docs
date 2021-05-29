@@ -194,7 +194,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Helvetica, Arial, Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Comic Sans MS, Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -2912,4 +2912,24 @@ mjx-container[display="true"] + br {
   .comments {
     padding: 10px 12px;
   }
+}
+.posts-expand .post {
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+p,
+ol li {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  line-height: 125%;
+}
+video {
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.post-title {
+  font-style: italic;
+  font-family: Times New Roman;
 }
