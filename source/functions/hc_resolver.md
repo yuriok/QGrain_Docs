@@ -8,7 +8,7 @@ mathjax: true
 
 Follow the procedures:
 
-1. Load your GSDs.
+1. Click the `Load Dataset` button to load your GSDs.
 2. Click the `Perform` button to check the initial result. You could see a dendrogram at the major interface. It shows the relationships of different samples. At the top, all samples are in the same cluster. Go down, the cluster will be split into two new clusters, and so on. At the bottom, each sample is in its cluster. If the number of samples is too great, it’s difficult to should all labels of the bottom layer. Hence, it’s truncated and only shows `p` bottom leaves, you can change the `p` to show more or fewer bottom leaves. **Note that `p` only affects the figure, it has no influence on the clustering result. The Nclusters parameter controls the number of clusters.**
 3. Click the `Show Typical` button to display the first sample of each cluster. This process can be treated as screening typical samples.
 4. Clicking the `Show All` button will display all samples of the same clusters in several individual figures.
