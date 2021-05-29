@@ -22,3 +22,5 @@ Follow the procedures:
   <source src="/videos/emma.mp4" type="video/mp4">
   The saved animation of the fitting process of NNEMMA.
 </video>
+<p class="image-caption">The saved animation of the fitting process of NNEMMA</p>
+
