@@ -35,8 +35,6 @@ Finally, you will see the `Console` interface of QGrain.
 
 ## Functions
 
-The detailed introduction of these functions is [here](/functions).
-
 * [Dataset Generator](/functions/dataset_generator)
 
 * [Dataset Viewer](/functions/dataset_viewer)
@@ -48,8 +46,6 @@ The detailed introduction of these functions is [here](/functions).
 * [EMMA Resolver](/functions/emma_resolver)
 
 ## Tutorials
-
-Click [here](/tutorials) to see more tutorials.
 
 * [Advanced installation](/tutorials/install)
 
