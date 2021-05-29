@@ -30,7 +30,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://qgrain.net/images/hc.png">
 <meta property="article:published_time" content="2021-05-28T16:15:11.000Z">
-<meta property="article:modified_time" content="2021-05-29T08:07:18.160Z">
+<meta property="article:modified_time" content="2021-05-29T11:11:11.500Z">
 <meta property="article:author" content="Yuming Liu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://qgrain.net/images/hc.png">
@@ -192,7 +192,7 @@
           <p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Hierarchical_clustering">Hierarchical clustering</a> (HC) is one kind of clustering method. The hierarchical algorithms provided by the <a target="_blank" rel="noopener" href="https://docs.scipy.org/doc/scipy/reference/cluster.hierarchy.html">hierarchy</a> sub-module in <a target="_blank" rel="noopener" href="https://www.scipy.org/">SciPy</a> have been integrated into QGrain. You can use this function to filter the typical samples, trim the dataset and take a brief classification of sedimentary facies.</p>
 <p>Follow the procedures:</p>
 <ol>
-<li>Load your GSDs.</li>
+<li>Click the <code>Load Dataset</code> button to load your GSDs.</li>
 <li>Click the <code>Perform</code> button to check the initial result. You could see a dendrogram at the major interface. It shows the relationships of different samples. At the top, all samples are in the same cluster. Go down, the cluster will be split into two new clusters, and so on. At the bottom, each sample is in its cluster. If the number of samples is too great, it’s difficult to should all labels of the bottom layer. Hence, it’s truncated and only shows <code>p</code> bottom leaves, you can change the <code>p</code> to show more or fewer bottom leaves. <strong>Note that <code>p</code> only affects the figure, it has no influence on the clustering result. The Nclusters parameter controls the number of clusters.</strong></li>
 <li>Click the <code>Show Typical</code> button to display the first sample of each cluster. This process can be treated as screening typical samples.</li>
 <li>Clicking the <code>Show All</code> button will display all samples of the same clusters in several individual figures.</li>
