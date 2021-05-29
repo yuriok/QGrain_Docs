@@ -5,7 +5,7 @@ date: 2021-05-20 16:37:45
 
 ## The aim of QGrain
 
-![The logo of QGrain, Copyright 2021 Yuming Liu, All rights reserved](/images/icon.png)
+![The logo of QGrain, Copyright 2021 Yuming Liu, All rights reserved](/images/logos/200x200.png)
 
 QGrain aims to provide an easy-to-use and comprehensive analysis platform for grain-size distributions. QGrain has implemented many functions, however, there still are many useful tools that have not been contained. Hence, we published QGrain as an open-source project, and welcome other researchers to contribute their ideas and codes. Codes are available at this GitHub [repository](https://github.com/yuriok/QGrain/).
 
