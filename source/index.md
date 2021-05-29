@@ -45,6 +45,8 @@ The detailed introduction of these functions is [here](/functions).
 
 * [HC Resolver](/functions/hc_resolver)
 
+* [EMMA Resolver](/functions/emma_resolver)
+
 ## Tutorials
 
 Click [here](/tutorials) to see more tutorials.
