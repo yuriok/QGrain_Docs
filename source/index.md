@@ -45,9 +45,13 @@ Finally, you will see the `Console` interface of QGrain.
 
 * [EMMA Resolver](/functions/emma_resolver)
 
+* [SSU Resolver](/functions/ssu_resolver)
+
 ## Tutorials
 
 * [Advanced installation](/tutorials/install)
+
+* [How to load the grain-size distributions](/tutorials/load_gsds)
 
 ## Contact
 
