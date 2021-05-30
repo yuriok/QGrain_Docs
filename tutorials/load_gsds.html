@@ -21,29 +21,29 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;qgrain.net&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12,&quot;onmobile&quot;:false},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:true,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;slideDownIn&quot;,&quot;post_body&quot;:&quot;slideDownIn&quot;,&quot;coll_header&quot;:&quot;slideLeftIn&quot;,&quot;sidebar&quot;:&quot;slideUpIn&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;}}</script>
-<meta name="description" content="Hierarchical clustering (HC) is one kind of clustering method. The hierarchical algorithms provided by the hierarchy sub-module in SciPy have been integrated into QGrain. You can use this function to">
+<meta name="description" content="The first step of analyzing the grain-size distribution is loading them into the software. This procedure may be the most error-prone one because we can not know what’s the layout of your data, only a">
 <meta property="og:type" content="website">
-<meta property="og:title" content="HC Resolver">
-<meta property="og:url" content="http://qgrain.net/functions/hc_resolver.html">
+<meta property="og:title" content="How to load the grain-size distributions">
+<meta property="og:url" content="http://qgrain.net/tutorials/load_gsds.html">
 <meta property="og:site_name" content="QGrain">
-<meta property="og:description" content="Hierarchical clustering (HC) is one kind of clustering method. The hierarchical algorithms provided by the hierarchy sub-module in SciPy have been integrated into QGrain. You can use this function to">
+<meta property="og:description" content="The first step of analyzing the grain-size distribution is loading them into the software. This procedure may be the most error-prone one because we can not know what’s the layout of your data, only a">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://qgrain.net/images/hc.png">
-<meta property="article:published_time" content="2021-05-28T16:15:11.000Z">
-<meta property="article:modified_time" content="2021-05-30T13:07:21.887Z">
+<meta property="og:image" content="http://qgrain.net/images/load_dialog.png">
+<meta property="article:published_time" content="2021-05-30T19:01:21.000Z">
+<meta property="article:modified_time" content="2021-05-30T13:07:21.903Z">
 <meta property="article:author" content="Yuming Liu">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://qgrain.net/images/hc.png">
+<meta name="twitter:image" content="http://qgrain.net/images/load_dialog.png">
 
 
-<link rel="canonical" href="http://qgrain.net/functions/hc_resolver">
+<link rel="canonical" href="http://qgrain.net/tutorials/load_gsds">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:false,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;http:&#x2F;&#x2F;qgrain.net&#x2F;functions&#x2F;hc_resolver.html&quot;,&quot;path&quot;:&quot;functions&#x2F;hc_resolver.html&quot;,&quot;title&quot;:&quot;HC Resolver&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:false,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;http:&#x2F;&#x2F;qgrain.net&#x2F;tutorials&#x2F;load_gsds.html&quot;,&quot;path&quot;:&quot;tutorials&#x2F;load_gsds.html&quot;,&quot;title&quot;:&quot;How to load the grain-size distributions&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>HC Resolver | QGrain
+<title>How to load the grain-size distributions | QGrain
 </title><script src="/js/config.js"></script>
   
 
@@ -178,7 +178,7 @@
     
     <div class="post-block" lang="en"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">HC Resolver<a href="https://github.com/yuriok/QGrain_Docs/edit/master/source/functions/hc_resolver.md" class="post-edit-link" title="Edit this post" rel="noopener" target="_blank"><i class="fa fa-pen-nib"></i></a>
+<h1 class="post-title" itemprop="name headline">How to load the grain-size distributions<a href="https://github.com/yuriok/QGrain_Docs/edit/master/source/tutorials/load_gsds.md" class="post-edit-link" title="Edit this post" rel="noopener" target="_blank"><i class="fa fa-pen-nib"></i></a>
 </h1>
 
 <div class="post-meta-container">
@@ -189,17 +189,12 @@
       
       
       <div class="post-body">
-          <p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Hierarchical_clustering">Hierarchical clustering</a> (HC) is one kind of clustering method. The hierarchical algorithms provided by the <a target="_blank" rel="noopener" href="https://docs.scipy.org/doc/scipy/reference/cluster.hierarchy.html">hierarchy</a> sub-module in <a target="_blank" rel="noopener" href="https://www.scipy.org/">SciPy</a> have been integrated into QGrain. You can use this function to filter the typical samples, trim the dataset and take a brief classification of sedimentary facies.</p>
-<p>Follow the procedures:</p>
-<ol>
-<li>Click the <code>Load Dataset</code> button to load your GSDs.</li>
-<li>Click the <code>Perform</code> button to check the initial result. You could see a dendrogram at the major interface. It shows the relationships of different samples. At the top, all samples are in the same cluster. Go down, the cluster will be split into two new clusters, and so on. At the bottom, each sample is in its cluster. If the number of samples is too great, it’s difficult to should all labels of the bottom layer. Hence, it’s truncated and only shows <code>p</code> bottom leaves, you can change the <code>p</code> to show more or fewer bottom leaves. <strong>Note that <code>p</code> only affects the figure, it has no influence on the clustering result. The Nclusters parameter controls the number of clusters.</strong></li>
-<li>Click the <code>Show Typical</code> button to display the first sample of each cluster. This process can be treated as screening typical samples.</li>
-<li>Clicking the <code>Show All</code> button will display all samples of the same clusters in several individual figures.</li>
-<li>If you are satisfied with these parameters, click the <code>Save</code> button to save the clustering results into an Excel file.</li>
-<li>If you want to classify sedimentary facies, you must make sure that the number of clusters could distinguish different sedimentary facies. After that, you could map the clusters to certain sedimentary facies according to the geological settings and other evidence. <strong>Note: Different functions to calculate the similarities between samples may have different susceptibilities of the transition of sedimentary facies, there is no research on which distance metric is more suitable for the classification of sedimentary facies. Therefore, the current version of QGrain only uses the whole GSD to calculate distances, this may ignore some minor sub-populations.</strong></li>
-</ol>
-<p><img src="/images/hc.png" alt="The screenshot of HC Resolver&#39;s interface"></p>
+          <p>The first step of analyzing the grain-size distribution is loading them into the software. This procedure may be the most error-prone one because we can not know what’s the layout of your data, only a particular layout of data can be read directly by the program. If you are not sure whether your data meets the requirements, you can generate an artificial dataset by the <a href="./dataset_generator"><code>Dataset Generator</code></a> module, and see its <code>Dataset</code> sheet for the default layout.</p>
+<p>To take an example, we will load an artificial dataset that was generated by our <a href="./dataset_generator"><code>Dataset Generator</code></a> module, you can download it from <a href="/datasets/artificial_dataset_example.xlsx">here</a>.</p>
+<p>Most modules of QGrain have the <code>Load</code> or <code>Load Dataset</code> button/action, by clicking the button or action, you will see a dialog popped up to ask you to select the filename, choose the sheet, and assign the rows and columns. By clicking the <code>Select</code> button in the dialog, a file dialog will be popped up to ask you to select a file. At present, this file could be <code>*.csv</code>, <code>*.xls</code> and <code>*.xlsx</code> formats. If there is no error raised (e.g., the selected file is occupied by another program), the sheet names of Excel files will be read as the options in the <code>Sheet</code> combo box. If you select a <code>*.csv</code> file, there will be only one option in this combo box, that’s the filename.</p>
+<p><img src="/images/load_dialog.png" alt="The screenshot of Dataset Loader&#39;s interface"></p>
+<p>For Excel files, one file can contain multiple sheets, it’s suitable for placing the related but different types of information in different sheets of the same file. For example, the output files of QGrain usually put a <code>README</code> sheet to give a brief description of this file and put the data sheet(s) after this sheet. Here, we need to choose the <code>Dataset</code> sheet. By default, it will load the first row as the grain-size classes, and the first column is used to put the names of samples, grain-size distributions (GSDs) are tight with the classes and names. The default output layout of QGrain is correct, so, just click the <code>Try Load</code> button. If your dataset does not follow this data layout, i.e., it has additional rows or columns, you can change the settings to load them. Considering the complexity, we only support the horizontal layout (i.e., each row is one sample). If your dataset is vertical (i.e., each column is one sample), it’s easy to transform it using other software (e.g. Microsoft Excel).</p>
+<p>The loading process will be displayed in the text browser to help users to check the error more easily. The unit of grain-size classes should be $\mu m$, the values should be incremental (i.e., left columns are finer and right columns are coarser), and the interval should be equal in $\phi$ space. If there is a text cell in the row of grain-size classes, it will raise an error. The names of samples should be texts, if they are numbers, they will be converted to texts. The distribution values of each sample should be numerical, and the sum of them should be 1 or 100. <strong>Note: if there is an empty cell in the row of distribution, it will raise an error. You can use empty rows to separate samples, but the rows should be fully empty.</strong> In addition, please don’t put some dissociative cells out of the range of distributions. <strong>Note: although we have written some codes to validate the data, there may still be some omissive errors passed the validation.</strong> Please make sure your GSDs are valid.</p>
 
       </div>
       

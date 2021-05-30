@@ -2923,8 +2923,9 @@ ol li {
   margin-bottom: 10px;
   line-height: 125%;
 }
+img,
 video {
-  width: 400px;
+  max-width: 400px;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px;
