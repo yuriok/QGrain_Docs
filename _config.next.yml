@@ -74,12 +74,11 @@ footer:
     enable: true
     icp: 赣ICP备2021004822号-1
     # The digit in the num of gongan beian.
-    gongan_id:
+    gongan_id: 61011302001241
     # The full num of gongan beian.
-    gongan_num:
+    gongan_num: 陕公网安备 61011302001241号
     # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
-    gongan_icon_url:
-    # gongan_icon_url: /images/logos/gongan.png
+    gongan_icon_url: /images/logos/gongan.png
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
