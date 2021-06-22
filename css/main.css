@@ -181,7 +181,7 @@ body {
 body {
   background: var(--body-bg-color);
   color: var(--text-color);
-  font-family: Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Times New Roman, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -194,7 +194,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Comic Sans MS, Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Times New Roman, Times New Roman, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -1230,7 +1230,7 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Comic Sans MS, Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Times New Roman, Times New Roman, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   margin: 0;
@@ -1986,7 +1986,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Helvetica, Arial, Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Times New Roman, Times New Roman, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -2197,7 +2197,7 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Helvetica, Arial, Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Times New Roman, Times New Roman, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
@@ -2931,6 +2931,6 @@ video {
   max-width: 80%;
 }
 .post-title {
-  font-style: italic;
+  font-style: bold;
   font-family: Times New Roman;
 }
