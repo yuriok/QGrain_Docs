@@ -27,11 +27,11 @@ custom_file_path:
   #sidebar: source/_data/sidebar.swig
   #postMeta: source/_data/post-meta.swig
   #postBodyEnd: source/_data/post-body-end.swig
-  footer: source/_data/footer.swig
+  #footer: source/_data/footer.swig
   #bodyEnd: source/_data/body-end.swig
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
-  style: source/_data/styles.styl
+  #style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -890,13 +890,13 @@ vendors:
   anime:
 
   # Internal version: 5.13.0
-  fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
+  # fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
   # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
-  # fontawesome:
+  fontawesome:
 
   # MathJax
-  mathjax: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  # mathjax:
+  # mathjax: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  mathjax:
 
   # KaTeX
   # katex: //cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css
@@ -912,12 +912,12 @@ vendors:
   pjax:
 
   # FancyBox
-  jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
-  fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
-  fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
-  # jquery:
-  # fancybox:
-  # fancybox_css:
+  # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
+  # fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
+  # fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
+  jquery:
+  fancybox:
+  fancybox_css:
 
   # Medium-zoom
   # mediumzoom: //cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
